@@ -8,7 +8,7 @@ export const Product = observer(() => {
     const params = useParams();
     const location = useLocation();
     //get params
-    let [searchParams, setSearchParams] = useSearchParams();
+    let [searchParams] = useSearchParams();
 
     let name = searchParams.get("name");
     console.log(params)
